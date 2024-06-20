@@ -1,0 +1,159 @@
+.proyectos {
+    margin-bottom: 100px;
+    .contenedorTitulo {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.144);
+
+        .titulo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px 0;
+
+            img {
+                width: 50px;
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: bold;
+            }
+        }
+
+        p {
+            color: gray;
+        }
+    }
+
+    .contenedorProyectos {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .tarjetaProyecto {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: #1a1919e3;
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            border-radius: 15px;
+            gap: 20px;
+            height: auto;
+            padding: 20px;
+
+
+            .portadaProyecto {
+                width: 50%;
+                height: 260px;
+                border-radius: 5px;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                }
+            }
+
+            .textoProyecto {
+                width: 50%;
+                height: 100%;
+
+                .encabezado {
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+
+                    h2 {
+                        font-size: 26px;
+                    }
+
+                    .botones {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+
+                        a {
+                            height: 50px;
+                            border: gray 1px solid;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 10px;
+                            transition: background-color 0.3s ease-in-out;
+
+                            img {
+                                height: 25px;
+                            }
+                        }
+
+                        a:hover {
+                            transition: 0.5s;
+                            background-color: #000;
+                        }
+                    }
+                }
+
+                .etiquetas {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                    color: gray;
+                    border-top: 1px solid rgba(255, 255, 255, 0.144);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+                    padding: 10px;
+
+                    div {
+                        height: 5px;
+                        width: 5px;
+                        background-color: gray;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
+                .descripcion {
+                    padding: 10px;
+
+                    p {
+                        font-size: 16px;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .proyectos {
+        .contenedorProyectos {
+            .tarjetaProyecto {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                .portadaProyecto{
+                    width: 100%;
+                    height: 200px;
+                }
+                .textoProyecto{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.numero{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .contenedorContador{
+        display: flex;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .tituloContador{
+        text-align: center;
+        color: gray;
+    }
+}

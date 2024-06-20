@@ -1,0 +1,199 @@
+.inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    
+
+    h1{
+        font-size: 40px;
+    }
+
+    .sobreMi{
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .portada{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .imagenPrincipal{
+                width: 150px;
+            }
+        }
+
+        .informacion{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .logoSecundario{
+                display: none;
+            }
+
+            h2{
+                color: grey;
+                font-size: 20px;
+            }
+
+            p{
+                color: grey;
+            }
+
+            .botones{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                .btn{
+                    margin-right: 20px;
+                    border: 1px solid grey;
+                    border-radius: 10px;
+                    width: 200px;
+                    height: 50px;
+                    transition: all 0.5s ease-in-out;
+                    display: flex;
+                    align-items: center;
+
+                    .icon{
+                        position: absolute;
+                        height: 40px;
+                        width: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.5s;
+                        transform: translateX(20px);
+                    }
+
+                    .text{
+                        transform: translateX(70px);
+                    }
+                }
+
+                .btn:hover{
+                    box-shadow: 0 0 20px 0px #1a1919e3;
+
+                    .icon{
+                        width: 35px;
+                        transform: translateX(70px);
+                    }
+
+                    .text{
+                        transition: all 0.5s;
+                        opacity: 0;
+                    }
+                }
+
+                .btn:focus{
+                    outline: none;
+                }
+
+                .btn:active{
+                    .icon{
+                        transform: scale(0.85);
+                    }
+                }
+            }
+        }
+
+    }
+
+    @keyframes slide{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        .titulo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .slide{
+            overflow: hidden;
+            padding: 60px 0;
+            white-space: nowrap;
+            
+            .logos{
+                display: inline-flex;
+                animation: 10s slide infinite linear;
+                img{
+                    height: 50px;
+                    width: 50px ;
+                    margin: 0 40px;
+                    opacity: 0.5;
+                }
+            }
+    
+            @keyframes animateLine {
+                0% {
+                  transform: translateX(100%); /* Comienza desde la derecha */
+                }
+                100% {
+                  transform: translateX(-100%); /* Termina en la izquierda */
+                }
+            }
+        }
+    }
+
+    .contadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-top: 1px solid rgba(255, 255, 255, 0.144);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .inicio{
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .inicio{
+        .sobreMi{
+            grid-template-columns: 1fr;
+            .portada{
+                display: none;
+            }
+            .informacion{
+                .tituloInicio{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    margin-bottom: 10px;
+                    .logoSecundario{
+                        display: flex;
+                        width: 80px;
+                    }
+                }
+
+                .botones{
+                    flex-direction: column;
+                    gap: 20px;
+                    .btn{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
