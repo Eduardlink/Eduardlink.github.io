@@ -11,7 +11,7 @@ const Stack = () => {
                     <img src="/stack.svg" alt="" />
                     <h1>Mi stack</h1>
                 </div>
-                <p>Compromiso de mantenerse actualizado con las últimas tendencias y técnicas de diseño.</p>
+                <p>Herramientas con las que tengo experiencia desarrollando.</p>
             </div>
             <div className="stacks">
                 <div className="tarjeta">

@@ -36,7 +36,7 @@ const Proyectos = () => {
                             <p>MySQL</p>
                         </div>
                         <div className="descripcion">
-                            <p>Platforma de gestión de restuarantes en línea, cuyo objetivo es agilizar el proceso de compra y brindar facilidades a pequeños negocios para surgir en el mercado digital.</p>
+                            <p>Plataforma de gestión de restuarantes en línea, cuyo objetivo es agilizar el proceso de compra y brindar facilidades a pequeños negocios para surgir en el mercado digital.</p>
                         </div>
                     </div>
                 </div>

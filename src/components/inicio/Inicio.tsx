@@ -69,7 +69,16 @@ const Inicio = () => {
                             <h1>Eduardo Pila</h1>
                         </div>
                     </div>
-                    <p>Ingeniero en software, especializado en el desarrollo front-end. Durante mi formación adquiri experiencia en el desarrollo de aplicaciones web y móviles con enfoque al diseño UI/UX</p>
+                    <p>
+                        Soy ingeniero en software, apasionado por crear aplicaciones web y móviles que ofrezcan una experiencia 
+                        de usuario intuitiva y atractiva. 
+                        <br />
+                        <br />
+                        Además, tengo un gran interés en la creación de contenido multimedia. 
+                        Esta pasión me ha permitido desarrollar habilidades complementarias que enriquecen mi trabajo en el diseño y 
+                        desarrollo de interfaces. También cuento con experiencia en la reparación y mantenimiento de equipos de cómputo, 
+                        permitiéndome abordar problemas técnicos de manera eficiente y efectiva.
+                    </p>
                     <div className="botones">
                         <a href="mailto:eduardo_pila@outlook.com" className='btn'>
                             <span className='icon'><img src="/send.svg" alt="Enviar correo" /></span>

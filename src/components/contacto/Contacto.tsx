@@ -57,7 +57,7 @@ const Contacto: React.FC = () => {
           <img src="/send.svg" alt="" />
           <h1>Contáctame</h1>
         </div>
-        <p>Compromiso de mantenerse actualizado con las últimas tendencias y técnicas de diseño.</p>
+        <p>Contáctame para conversar sobre tecnología, intercambiar ideas o resolver dudas.</p>
       </motion.div>
       <motion.div className="contacto" variants={variantes}>
         <motion.div className="texto" variants={variantes}>
