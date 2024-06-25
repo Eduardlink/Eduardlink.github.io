@@ -27,13 +27,22 @@ const Proyectos = () => {
                             </div>
                         </div>
                         <div className="etiquetas">
-                            <p>NextJs</p>
-                            <div></div>
-                            <p>Tailwind</p>
-                            <div></div>
-                            <p>Node</p>
-                            <div></div>
-                            <p>MySQL</p>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/nextjs.svg" alt="" />
+                                <p>NextJs</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/tailwind.svg" alt="" />
+                                <p>Tailwind</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/node-js.svg" alt="" />
+                                <p>NodeJs</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/mysql.svg" alt="" />
+                                <p>MySQL</p>
+                            </div>
                         </div>
                         <div className="descripcion">
                             <p>Plataforma de gestión de restuarantes en línea, cuyo objetivo es agilizar el proceso de compra y brindar facilidades a pequeños negocios para surgir en el mercado digital.</p>
@@ -54,11 +63,18 @@ const Proyectos = () => {
                             </div>
                         </div>
                         <div className="etiquetas">
-                            <p>Pantheon</p>
-                            <div></div>
-                            <p>Wordpress</p>
-                            <div></div>
-                            <p>Divi</p>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/pantheon.png" alt="" />
+                                <p>Pantheon</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/wordpress.svg" alt="" />
+                                <p>Wordpress</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/divi.svg" alt="" />
+                                <p>Divi</p>
+                            </div>
                         </div>
                         <div className="descripcion">
                             <p>Proyecto que busca promover el turismo en la ciudad de Ambato, apoyando a los pequeños negocios. En el proyecto se ofrece un blog donde poder publicar sitios de interes, cuyo objetivo es atraer el turismo e impulsar la economía local.</p>
@@ -79,9 +95,10 @@ const Proyectos = () => {
                             </div>
                         </div>
                         <div className="etiquetas">
-                            <p>Unreal Engine 5</p>
-                            <div></div>
-                            <p>Blueprints</p>
+                        <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/unreal-engine.png" alt="" />
+                                <p>Unreal Engine 5</p>
+                            </div>
                         </div>
                         <div className="descripcion">
                             <p>Un mundo virtual dedicado a la enseñanza del idioma inglés. Se recrea una biblioteca que recorre los diferentes tiempos gramaticales, y con cada uno su ambientacion cambia para adaptarse al tiempo gramatical estudiado. Además los usuarios pueden interactuar con diferentes elementos del entorno.</p>
@@ -102,13 +119,22 @@ const Proyectos = () => {
                             </div>
                         </div>
                         <div className="etiquetas">
-                            <p>Angular</p>
-                            <div></div>
-                            <p>Typescript</p>
-                            <div></div>
-                            <p>NodeJs</p>
-                            <div></div>
-                            <p>MySQL</p>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/angular.svg" alt="" />
+                                <p>Angular</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/typescript.svg" alt="" />
+                                <p>Typescript</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/node-js.svg" alt="" />
+                                <p>NodeJs</p>
+                            </div>
+                            <div className="etiquetaPortafolio">
+                                <img className='logoEtiqueta' src="/logos/mysql.svg" alt="" />
+                                <p>MySQL</p>
+                            </div>
                         </div>
                         <div className="descripcion">
                             <p>Es un simulador de prestamos e inversiones. En el se puden registrar entidades bancarias y registrar los valores de intereses a cobrar. El objetivo de la plataforma es unificar en un solo sitio la información de diferentes entidades bancarias.</p>

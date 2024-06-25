@@ -7,14 +7,17 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-section{
+
+section {
   scroll-snap-align: center;
   scroll-snap-align: center;
   overflow: hidden;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -25,12 +28,9 @@ section{
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -39,12 +39,12 @@ body {
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.landing{
+.landing {
   min-height: 100vh;
   width: 80vw;
   padding-left: 60px;
@@ -52,12 +52,43 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+
   .sidebarP,
   .social-sidebar {
     display: none;
   }
 
-  .landing{
+  .landing {
     width: 100vw;
+    padding: 0 20px;
   }
+}
+
+/*Titulos de las secciones*/
+.contenedorTitulo {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.144);
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.logoSeccion {
+  width: 50px;
+}
+
+.textoTitulo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.descripcionSeccion{
+  color: gray;
 }

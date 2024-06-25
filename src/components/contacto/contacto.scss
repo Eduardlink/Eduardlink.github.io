@@ -1,4 +1,5 @@
 .contactame{
+    margin-top: 100px;
     margin-bottom: 50px;
     .contenedorContacto{
         margin-top: 50px;
@@ -43,7 +44,6 @@
             span {
                 font-weight: 300;
             }
-    
         }
         .formulario{
             position: relative;
@@ -55,6 +55,11 @@
                 position: absolute;
                 margin: auto;
                 z-index: -1;
+
+                .figuraTelefono{
+                    aspect-ratio: 1 / 1;
+                    width: 100%;
+                }
             }
         
             form {

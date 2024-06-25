@@ -93,8 +93,8 @@ const Inicio = () => {
             </motion.div>
             
             <motion.div className="contadores">
-                <Contador number={30} title='Proyectos creados'></Contador>
-                <Contador number={10} title='Cursos aprobados'></Contador>
+                <Contador number={20} title='Proyectos creados'></Contador>
+                <Contador number={7} title='Cursos aprobados'></Contador>
                 <Contador number={10} title='Logos diseñados'></Contador>
             </motion.div>
         </motion.div>

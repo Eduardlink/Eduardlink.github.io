@@ -1,234 +1,35 @@
 .miStack{
     width: 100%;
     margin-top: 100px;
-    margin-bottom: 200px;
-
-    .contenedorStack{
-        margin-top: 50px;
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.144);
-
-        .titulo{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 10px;
-            
-            img{
-                width: 50px;
-            }
-
-            h1{
-                font-size: 28px;
-                font-weight: bold;
-            }
-        }
-
-        p{
-            color: gray;
-        }
-    }
     
     .stacks{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 20px;
-        row-gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
         margin-left: 10px;
         margin-right: 10px;
 
         .tarjeta{
-            width: 100%;
-            height: 70px;
             background: #1a1919e3;
-            border-radius: 20px;
             display: flex;
+            width: 130px;
+            padding: 5px 20px;
+            border-radius: 10px;
+            gap: 5px;
             align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(10px);
-            transition: 0.5s ease-in-out;
-
+            font-size: 14px;
+            font-weight: 200;
+            color: gray;
+            
             .portadaStack{
-                width: 50px;
-                height: 50px;
-                margin-left: 10px;
-                border-radius: 10px;
-                //background: url("../../../public/Stack/javascript-blanco.svg");
-            }
-            
-            .java{
-                background: url("../../../public/Stack/java-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-            
-            .javascript{
-                background: url("../../../public/Stack/javascript-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .python{
-                background: url("../../../public/Stack/python-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .mysql{
-                background: url("../../../public/Stack/mysql-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .sqlite{
-                background: url("../../../public/Stack/sqlite-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .sqlserver{
-                background: url("../../../public/Stack/microsoft-sql-server-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .angular{
-                background: url("../../../public/Stack/angular-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .react{
-                background: url("../../../public/Stack/react-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .wordpress{
-                background: url("../../../public/Stack/wordpress-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .figma{
-                background: url("../../../public/Stack/figma-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .adobexd{
-                background: url("../../../public/Stack/adobe-xd-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .illustrator{
-                background: url("../../../public/Stack/adobe-illustrator-blanco.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .infoStack{
-                width: calc(100% - 90px);
-                margin-left: 10px;
-                font-family: 'Poppins' sans-serif;
-
-                h2{
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-                p{
-                    font-size: 12px;
-                    font-weight: lighter;
+                img{
+                    height: 20px;
+                    color-scheme: #000;
                 }
             }
-
         }
 
-        .tarjeta:hover{
-            transform: scale(1.05);
-            //cursor: pointer;
-
-            .portadaStack{
-                transition: 0.5s ease-in-out;
-                //background: url("../../../public/angular-v1.svg");
-            }
-            
-            .java{
-                background: url("../../../public/Stack/java-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-
-            }
-
-            .javascript{
-                background: url("../../../public/Stack/javascript-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .python{
-                background: url("../../../public/Stack/python-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .mysql{
-                background: url("../../../public/Stack/mysql-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .sqlite{
-                background: url("../../../public/Stack/sqlite-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .sqlserver{
-                background: url("../../../public/Stack/microsoft-sql-server-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .angular{
-                background: url("../../../public/Stack/angular-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .react{
-                background: url("../../../public/Stack/react-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .wordpress{
-                background: url("../../../public/Stack/wordpress-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .figma{
-                background: url("../../../public/Stack/figma-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .adobexd{
-                background: url("../../../public/Stack/adobe-xd-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            .illustrator{
-                background: url("../../../public/Stack/adobe-illustrator-color.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-        }
     }
 }
 

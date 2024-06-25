@@ -16,7 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <link rel="icon" href="/logoEdu.ico" sizes="any" />
       <body className={inter.className}>{children}</body>
     </html>
   );

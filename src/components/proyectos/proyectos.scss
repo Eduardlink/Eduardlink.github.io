@@ -1,5 +1,5 @@
 .proyectos {
-    margin-bottom: 100px;
+    margin-top: 100px;
     .contenedorTitulo {
         margin-top: 50px;
         margin-bottom: 30px;
@@ -108,21 +108,25 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 20px;
+                    flex-wrap: wrap;
+                    gap: 10px;
                     color: gray;
                     border-top: 1px solid rgba(255, 255, 255, 0.144);
                     border-bottom: 1px solid rgba(255, 255, 255, 0.144);
                     padding: 10px;
 
-                    div {
-                        height: 5px;
-                        width: 5px;
-                        background-color: gray;
-                        border-radius: 50%;
-                    }
-
-                    p {
-                        font-size: 16px;
+                    .etiquetaPortafolio {
+                        background: #000;
+                        padding: 0 10px;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 5px;
+                        font-size: 14px;
+                        .logoEtiqueta{
+                            height: 10px;
+                        }
                     }
                 }
 
