@@ -84,8 +84,8 @@ const Inicio = () => {
                             <span className='icon'><img src="/send.svg" alt="Enviar correo" /></span>
                             <span className='text'>Contáctame</span>
                         </a>
-                        <a href="https://1drv.ms/b/s!Ao3I80Dm0cywa_EAWVHJ1pLtSMM?e=uS6zMd" target="_blank" className='btn'>
-                            <span className='icon'><img src="/doc-paper.svg" alt="Enviar correo" /></span>
+                        <a href="https://drive.google.com/file/d/1XJy-UMEatVccXnuYLfwqHjzLp9q0cJYL/view?usp=sharing" target="_blank" className='btn'>
+                            <span className='icon'><img src="/doc-paper.svg" alt="CV" /></span>
                             <span className='text'>Curriculum</span>
                         </a>
                     </div>
